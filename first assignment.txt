@@ -1,0 +1,169 @@
+//instance variable program
+
+public class Instancevar
+{
+
+               //Instance variables are declared inside the class or outside the methods
+
+		int a=10;   //int Instance variable
+		public void instancev()
+		{
+		System.out.println(a);
+                }
+		public static void main(String args[])
+		{
+			//to create object for the class
+			Instancevar ob=new Instancevar();
+			ob.instancev();
+		}
+}
+
+
+//static variable
+
+public class Staticvar
+	{
+		//static variables are executed only once
+		static int b=0;  //static variable
+		public void display()
+		{
+			b++;
+			System.out.println(b);
+		}
+		public static void main(String args[])
+		{
+		
+			//to create object for the class				
+			staticvar obj=new staticvar();
+			obj.display();        // d=0 incremented to d=1
+			obj.display();        //d=1 incremented to d=2
+		}
+}
+
+
+Use continue and return in if else and switch case:
+
+//ifelse
+
+public class Ifelse
+{
+	public void continue()
+	{
+		int a=10;
+		while(a)
+		{
+			if(a==5)
+				continue;
+
+			else
+				System.out.println(a);
+				a--;
+		}
+	}
+	public void return()
+	{
+		int b=10;
+		if(b>0)
+			System.out.println(b);
+			return;
+		else
+			System.out.println(b);
+	}
+}
+
+public static void main(String args[])
+		{
+			//to create object for the class
+			Ifelse ob=new Ifelse();
+			ob.continue();
+			ob.return;
+		}
+
+//switchcase
+
+public class SwitchIfelse
+{
+	public static void main(String args[])
+	{
+		int a=1;
+		switch(a)
+		{
+			case 1:System.out.println("one");
+			break;
+			case 2:System.out.println("two");
+			continue;
+			case 3:System.out.println("three");
+			return;
+			default:System.out.println("default");
+		}
+	}
+}
+
+
+Array
+
+A group of similar elements which are stored in continuous memory locations and all of them refered with a common name.
+Arrays are mainly 2 types 
+1. One-dimensional arrays 
+	declaration
+		eg: int[] x=new int[5];
+2. Two dimensional arrays 
+	declaration
+		eg: int[][] x=new int[3][3]; 
+
+
+sonar lint:
+
+1.  Developers describe sonar lint as "an IDE extension to detect and fix issues as you write code"
+2.  Some features offered by sonarlint are 
+Bug detection,
+Instant feeedback,
+Know what to do.
+
+sonarqube:
+
+1. It is a server where you can host your projects and execute analysis
+2. Features are
+Multilanguage,
+Detect tricky issues,
+Security analysis.
+
+
+//sample java program
+
+class Concepts
+{ 
+    public void ifcondition() 
+    { 
+        int i = 10; 
+        if (i < 15){ 
+            System.out.println("i is smaller than 15"); 
+	}
+        else{
+            System.out.println("i is greater than 15"); 
+    	}
+    }
+    public void nestedif()
+	{
+		int i = 10; 
+		if(i==10){
+			System.out.println("i is 10");
+		}
+        	if (i < 15){ 
+            		System.out.println("i is smaller than 15"); 
+		}
+        	else{
+            		System.out.println("i is greater than 15"); 
+		}
+	}
+
+}
+class Allconditions
+public void static main(String[] args)
+{
+	Concepts ob=new Concepts();
+	ob.ifcondition();
+	ob.nestedif();
+}
+
+
